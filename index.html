@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather App</title>	
+	<link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=css-tricks.com">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>weather in the world</h1>
+	</header>
+	<main>
+		<div id="search-town">
+			<label for="city">City</label>
+			<input type="text" name="city" id="city" autofocus />
+			<button type="button" id="btn-search">search</button>
+		</div>
+		<div id="loading" class="loading" hidden><img src="loader.svg" alt="loading"></div>
+		<div id="result" class="result" hidden>
+			<div id="no-result" hidden></div>
+			<div id="details" hidden>
+				<h2 id="weatherCity">City name</h2>
+				<div id="weatherDesc">Weather Description</div>
+				<div id="temperature">Weather Temperature</div>	
+			</div>
+		</div>
+	</main>
+
+	<!-- Script  -->
+	<script src="script.js" type="module"></script>
+</body>
+</html>

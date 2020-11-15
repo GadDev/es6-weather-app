@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+	box-sizing: border-box;
+}
+html {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	height: 80px;
+	background: whitesmoke;
+	box-shadow: 0 -10px 25px 5px rgba(0, 0, 0, 0.3);
+	text-align: left;
+	display: flex;
+	padding: 10px;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+}
+header h1 {
+	padding: 0;
+	margin: 0;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 50px;
+
+	min-width: 20rem;
+	max-width: 20rem;
+	margin: auto;
+}
+
+#search-town {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	min-width: 20rem;
+	max-width: 20rem;
+	font-size: 1rem;
+}
+
+#search-town label {
+	font-weight: bold;
+}
+#search-town input {
+	margin: 1rem auto;
+	padding: 1rem;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+button {
+	padding: 1rem;
+	background: rebeccapurple;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 1rem;
+	letter-spacing: 0.2rem;
+	font-kerning: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+.loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0.8);
+}
+.loader img {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.result {
+	margin: 20px auto;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 2rem;
+	width: 100%;
+}
